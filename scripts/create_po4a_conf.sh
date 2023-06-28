@@ -16,11 +16,4 @@ EOF
 
 for f in $(cat sources.txt)
 do
-    echo -n "[type: asciidoc] en/$f \$lang:./\$lang/$f" >> po4a.conf
-    if [ ${f:0:3} = git ]
-    then
-        echo " add_\$lang:?addenda/addendum.\$lang.txt" >> po4a.conf
-    else
-        echo >> po4a.conf
-    fi
-done
+    echo -n "[type: el
